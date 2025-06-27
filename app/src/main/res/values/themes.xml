@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MinhaCompra" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MinhaCompra" parent="Base.Theme.MinhaCompra" />
+
+
+
+    <style name="btn_padrao">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_padrao_shape</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="btn_add">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_add_shape</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="btn_cancelar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_cancelar_shape</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="btn_editar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_editar_shape</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="btn_excluir">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_excluir_shape</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+
+
+    <style name="input_padrao">
+        <item name="android:background">@drawable/input_padrao_shape</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+
+    <style name="input_spinner">
+
+        <item name="android:background">@drawable/input_spinner_shape</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+</resources>
