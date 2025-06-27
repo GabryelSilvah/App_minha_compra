@@ -48,7 +48,7 @@ public class EditarActivity extends AppCompatActivity {
         listaPrioridades.add("Alta");
         input_spinner_prioridade.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, listaPrioridades));
 
-       int indexPrioridade = listaPrioridades.indexOf(intentRecebida.getStringExtra("prioridade_produto"));
+        int indexPrioridade = listaPrioridades.indexOf(intentRecebida.getStringExtra("prioridade_produto"));
 
         input_spinner_prioridade.setSelection(indexPrioridade);
 
@@ -78,8 +78,6 @@ public class EditarActivity extends AppCompatActivity {
                     Toast.makeText(EditarActivity.this, "Informe o nome do produto", Toast.LENGTH_LONG).show();
                 } else if (input_quantidade.getText().toString().isEmpty()) {
                     Toast.makeText(EditarActivity.this, "Informe a qunatidade do produto", Toast.LENGTH_LONG).show();
-                } else if (input_spinner_prioridade.getSelectedItemPosition() == 0) {
-                    Toast.makeText(EditarActivity.this, "Informe a prioridade do produto", Toast.LENGTH_LONG).show();
                 } else {
 
                     //Pegando dados
