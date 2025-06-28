@@ -42,11 +42,11 @@ public class CadastroActivity extends AppCompatActivity {
         this.input_nome = findViewById(R.id.input_nome);
         this.input_quantidade = findViewById(R.id.input_quantidade);
 
-        //Adicionando lista de clientes no spinner
+        //Adicionando lista de prioridades no spinner
         this.input_spinner_prioridade = findViewById(R.id.input_spinner_prioridade);
         List<String> listaPrioridades = new ArrayList<String>();
         listaPrioridades.add("Baixa");
-        listaPrioridades.add("Media");
+        listaPrioridades.add("Média");
         listaPrioridades.add("Alta");
         input_spinner_prioridade.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, listaPrioridades));
         input_spinner_prioridade.setSelection(0);

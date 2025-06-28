@@ -15,6 +15,15 @@ public interface ProdutoRepository {
     @Query("select * from produtos")
     public List<Produto> findAll();
 
+    @Query("select * from produtos WHERE prioridade_produto = :prioridade")
+    public List<Produto> findPrioridade(String prioridade);
+
+    @Query("select * from produtos ORDER BY quantidade_produto DESC")
+    public List<Produto> findOrderMaior();
+
+    @Query("select * from produtos ORDER BY quantidade_produto ASC")
+    public List<Produto> findOrderMenor();
+
     @Query("select * from produtos where id_produto = :id")
     public Produto findById(int id);
 
@@ -24,7 +33,7 @@ public interface ProdutoRepository {
     @Query("DELETE FROM produtos WHERE id_produto = :id_produto")
     public void delete(int id_produto);
 
-    @Query("UPDATE produtos SET nome_produto = :nome, quantidade_produto = :quantidade, prioridade_produto = :prioridade")
-    public void updateProduto(String nome, int quantidade, String prioridade);
+    @Query("UPDATE produtos SET nome_produto = :nome, quantidade_produto = :quantidade, prioridade_produto = :prioridade WHERE id_produto = :id_produto")
+    public void updateProduto(String nome, int quantidade, String prioridade, int id_produto);
 
 }
